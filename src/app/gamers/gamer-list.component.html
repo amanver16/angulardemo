@@ -1,0 +1,44 @@
+<div class="card" *ngFor="let gamer of gamers">
+  <div class="card-header">
+    <h3 class="card-title">{{gamer.name}}</h3>
+  </div>
+  <div class="card-body">
+    <div class="col-10">
+      <div class="row vertical-align">
+        <div class="col-4">
+          <img class="imageClass" [src]="gamer.photoPath">
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-6">Gender</div>
+            <div class="col-6">: {{gamer.gender}}</div>
+          </div>
+          <div class="row">
+            <div class="col-6">Date of Birth</div>
+            <div class="col-6">: {{gamer.dateOfBirth | date}}</div>
+          </div>
+          <div class="row">
+            <div class="col-6">Email</div>
+            <div class="col-6">: {{gamer.email}}</div>
+          </div>
+          <div class="row">
+            <div class="col-6">Phone Number</div>
+            <div class="col-6">: {{gamer.phoneNumber}}</div>
+          </div>
+          <div class="row">
+            <div class="col-6">Contact Preference</div>
+            <div class="col-6">: {{gamer.contactPreference}}</div>
+          </div>
+          <div class="row">
+            <div class="col-6">Department</div>
+            <div class="col-6">: {{gamer.game}}</div>
+          </div>
+          <div class="row">
+            <div class="col-6">Is Active</div>
+            <div class="col-6">: {{gamer.isActive}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
